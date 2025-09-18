@@ -37,8 +37,41 @@ The system centralizes school operations and provides **role-based access** for 
 
 ---
 
-## Demo
-For ease of access, the repository includes:
-- **Pre-seeded demo accounts** (so you don’t need to create new users)  
-- **SQLite version of the database** with sample data for quick setup  
-- **Screenshots and schema diagrams** for fast review without running the code  
+## Demo Screenshots
+
+### Login Screen  
+![Login Screen](assets/login.png)  
+A secure login page where users authenticate with their credentials. Role-based access determines whether they enter as a student, guardian, teacher, or administrator.  
+
+
+---
+
+### Administrator Dashboard  
+![Admin Dashboard](assets/district_dashboard.png)  
+District administrators have access to key KPIs, including total schools, number of active students, and absence rates. Administrators can drill down into schools and grade levels to analyze exam scores and attendance trends.  
+
+---
+
+### Executive Dashboard – Grade-Level Attendance  
+![Executive Dashboard 2](assets/district_executive_dashboard.png)  
+Detailed visualization of attendance rates across schools and within individual grade levels. This supports administrators in identifying trends and areas needing intervention.  
+
+---
+
+### Grade Management (Teacher View)  
+![Grade Management](assets/teacher_grades.png)  
+Teachers can record, update, and calculate weighted grades for their students. A real-time gradebook and automatic calculation of overall course grades provide both accuracy and efficiency.  
+
+---
+
+### Attendance Tracking (Teacher View)  
+![Attendance Management](assets/teacher_attendance.png)  
+Teachers can take daily attendance, mark students as present or absent, and view immediate visualizations of attendance patterns.  
+
+---
+
+### Analytics Dashboard (Course-Level Reporting)  
+![Analytics Dashboard](assets/teacher_analytics.png)  
+Provides aggregated analytics for a given course, including grade distribution and class size. Visual reports help teachers and administrators quickly understand student performance patterns.  
+
+---
