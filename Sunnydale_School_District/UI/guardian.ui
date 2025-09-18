@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>950</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>950</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sunnydale School District - Guardian Portal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    background: none;
+    height: 0px;
+}
+
+/* === GENERAL APP STYLE === */
+QMainWindow {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+ QWidget {
+    background-color: rgb(255, 252, 228);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+/* === PUSH BUTTONS === */
+QPushButton {
+    background-color: rgb(5, 60, 171);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(187, 228, 255);
+}
+
+QPushButton:pressed {
+    background-color: #2e5aa0;
+}
+
+/* === COMBOBOX, INPUTS, TEXTAREA === */
+QComboBox, QLineEdit, QTextEdit, QDateEdit, QTimeEdit {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    selection-background-color: #e6f0ff;
+    selection-color: #000;
+}
+
+
+/* === TABLES === */
+QTableWidget, QTableView {
+    background-color: #ffffff;
+    alternate-background-color: #f0f0f0;
+    gridline-color: #dcdcdc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+QHeaderView::section {
+    background-color: #e6e9ed;
+    padding: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+/* === LIST WIDGETS === */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* === CALENDAR === */
+QCalendarWidget QToolButton {
+    color: #4a90e2;
+}
+
+QCalendarWidget QAbstractItemView {
+    selection-background-color: rgb(5, 60, 171);
+    selection-color: white;
+}
+
+/* === GROUP BOXES === */
+QGroupBox {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 4px;
+    background-color: transparent;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* === TABS === */
+QTabWidget::pane {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	background-color: rgb(187, 228, 255);
+}
+
+QTabBar::tab {
+    background: #e6e9ed;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 6px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    color: rgb(5, 60, 171);
+    padding: 6px 12px;
+   	font-weight: bold;
+}
+
+/* === TOOLTIP === */
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+QCheckBox {
+    background-color: white;
+}
+
+QMessageBox {
+    background-color: white;
+    font-size: 15px;
+}
+
+QMessageBox QLabel {
+    background-color: transparent;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>20</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="sunnydale_header">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetMinimumSize</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="sunnydale_header_png">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+             <horstretch>1</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>:/sunnydale_header.png/sunnydale_header.png</pixmap>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="logout_button">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI,sans-serif</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+   	font-size: 15pt;
+</string>
+           </property>
+           <property name="text">
+            <string>Logout</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QMenuBar {
+    background: none;
+    height: 0px;
+}
+
+/* === GENERAL APP STYLE === */
+QMainWindow {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+ QWidget {
+    background-color: rgb(255, 252, 228);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+/* === PUSH BUTTONS === */
+QPushButton {
+    background-color: rgb(5, 60, 171);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(187, 228, 255);
+}
+
+QPushButton:pressed {
+    background-color: #2e5aa0;
+}
+
+/* === COMBOBOX, INPUTS, TEXTAREA === */
+QComboBox, QLineEdit, QTextEdit, QDateEdit, QTimeEdit {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    selection-background-color: #e6f0ff;
+    selection-color: #000;
+}
+
+
+/* === TABLES === */
+QTableWidget, QTableView {
+    background-color: #ffffff;
+    alternate-background-color: #f0f0f0;
+    gridline-color: #dcdcdc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+QHeaderView::section {
+    background-color: #e6e9ed;
+    padding: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+/* === LIST WIDGETS === */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* === CALENDAR === */
+QCalendarWidget QToolButton {
+    color: #4a90e2;
+}
+
+QCalendarWidget QAbstractItemView {
+    selection-background-color: rgb(5, 60, 171);
+    selection-color: white;
+}
+
+/* === GROUP BOXES === */
+QGroupBox {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 4px;
+    background-color: transparent;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* === TABS === */
+QTabWidget::pane {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	background-color: rgb(187, 228, 255);
+}
+
+QTabBar::tab {
+    background: #e6e9ed;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 6px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    color: rgb(5, 60, 171);
+    padding: 6px 12px;
+   	font-weight: bold;
+}
+
+/* === TOOLTIP === */
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+QCheckBox {
+    background-color: white;
+}
+
+QMessageBox {
+    background-color: white;
+    font-size: 15px;
+}
+
+QMessageBox QLabel {
+    background-color: transparent;
+}
+
+
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="dasboard">
+       <attribute name="title">
+        <string>   Dashboard   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLabel" name="labelGuardianName">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">qproperty-alignment: 'AlignCenter';
+font-size: 20pt;
+font-weight: bold;
+</string>
+          </property>
+          <property name="text">
+           <string>Welcome, [DYNAMIC: Guardian Name]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_8">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QFrame" name="frame_9">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <widget class="QFrame" name="crest_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="sunnydale_logo_png">
+                   <property name="maximumSize">
+                    <size>
+                     <width>500</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Sunnydale Logo</string>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_7">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">font: 14pt;</string>
+                   </property>
+                   <property name="text">
+                    <string>Select a Student</string>
+                   </property>
+                   <property name="textFormat">
+                    <enum>Qt::AutoText</enum>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QListView" name="listViewStudents">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: &quot;white&quot;;
+border: 1px solid #aaa;
+border-radius: 6px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="student_grades">
+       <attribute name="title">
+        <string>   Student Grades   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="labelSelectedStudent">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">qproperty-alignment: 'AlignCenter';
+font-size: 20pt;
+font-weight: bold;
+</string>
+          </property>
+          <property name="text">
+           <string>[DYNAMIC: Selected Student ]</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_4">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QTableWidget" name="tableWidget_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Course Name</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Score</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Grade</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="attendance">
+       <attribute name="title">
+        <string>   Attendance   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QCalendarWidget" name="calendarWidget">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="minimumDate">
+           <date>
+            <year>2025</year>
+            <month>3</month>
+            <day>1</day>
+           </date>
+          </property>
+          <property name="maximumDate">
+           <date>
+            <year>2025</year>
+            <month>5</month>
+            <day>31</day>
+           </date>
+          </property>
+          <property name="gridVisible">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QTableWidget" name="tableWidget">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Date</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Status</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Notes</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_6">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: &quot;white&quot;;</string>
+             </property>
+             <property name="title">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="styleSheet">
+                 <string notr="true">
+font-size: 20pt;
+font-weight: bold;
+</string>
+                </property>
+                <property name="text">
+                 <string>Overall Attendance</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="labelPresentCount">
+                <property name="text">
+                 <string>Present: [DYNAMIC]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="labelExcusedCount">
+                <property name="text">
+                 <string>Excused: [DYNAMIC]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="labelLateCount">
+                <property name="text">
+                 <string>Late:  [DYNAMIC]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="labelAbsentCount">
+                <property name="text">
+                 <string>Absent: [DYNAMIC]</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="contact_teacher">
+       <attribute name="title">
+        <string>   Contact Teacher   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Select Teacher</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxTeacherSelect"/>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEditTeacherMessage"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>Send Message</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

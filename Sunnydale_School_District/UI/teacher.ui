@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sunnydale School District - Teacher Portal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    background: none;
+    height: 0px;
+}
+
+/* === GENERAL APP STYLE === */
+QMainWindow {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+ QWidget {
+    background-color: rgb(255, 252, 228);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+/* === PUSH BUTTONS === */
+QPushButton {
+    background-color: rgb(5, 60, 171);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(187, 228, 255);
+}
+
+QPushButton:pressed {
+    background-color: #2e5aa0;
+}
+
+/* === COMBOBOX, INPUTS, TEXTAREA === */
+QComboBox, QLineEdit, QTextEdit, QDateEdit, QTimeEdit {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    selection-background-color: #e6f0ff;
+    selection-color: #000;
+}
+
+
+/* === TABLES === */
+QTableWidget, QTableView {
+    background-color: #ffffff;
+    alternate-background-color: #f0f0f0;
+    gridline-color: #dcdcdc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+QHeaderView::section {
+    background-color: #e6e9ed;
+    padding: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+/* === LIST WIDGETS === */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* === CALENDAR === */
+QCalendarWidget QToolButton {
+    color: #4a90e2;
+}
+
+QCalendarWidget QAbstractItemView {
+    selection-background-color: rgb(5, 60, 171);
+    selection-color: white;
+}
+
+/* === GROUP BOXES === */
+QGroupBox {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 4px;
+    background-color: transparent;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* === TABS === */
+QTabWidget::pane {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	background-color: rgb(187, 228, 255);
+}
+
+QTabBar::tab {
+    background: #e6e9ed;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 6px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    color: rgb(5, 60, 171);
+    padding: 6px 12px;
+   	font-weight: bold;
+}
+
+/* === TOOLTIP === */
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+QCheckBox {
+    background-color: white;
+}
+
+QMessageBox {
+    background-color: white;
+    font-size: 15px;
+}
+
+QMessageBox QLabel {
+    background-color: transparent;
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_10">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="sunnydale_header">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="sunnydale_header_png">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>:/sunnydale_header.png/sunnydale_header.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="logout_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+   	font-size: 15pt;
+</string>
+        </property>
+        <property name="text">
+         <string>Logout</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="dashboard_tab">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <attribute name="title">
+        <string>   Dashboard   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="teacher_name_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI,sans-serif</family>
+            <pointsize>20</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#teacher_name_label {
+	qproperty-alignment: 'AlignCenter';
+   	font-size: 20pt;
+   	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>Welcome, </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="teacher_id_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QTableWidget" name="teacher_classes_table">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustToContents</enum>
+             </property>
+             <column>
+              <property name="text">
+               <string>Course ID</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Course Name</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Grade Level</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Class Times</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Days</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCalendarWidget" name="teacher_calendar">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI,sans-serif</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="selectedDate">
+           <date>
+            <year>2025</year>
+            <month>5</month>
+            <day>4</day>
+           </date>
+          </property>
+          <property name="minimumDate">
+           <date>
+            <year>2025</year>
+            <month>3</month>
+            <day>1</day>
+           </date>
+          </property>
+          <property name="maximumDate">
+           <date>
+            <year>2025</year>
+            <month>5</month>
+            <day>30</day>
+           </date>
+          </property>
+          <property name="firstDayOfWeek">
+           <enum>Qt::Sunday</enum>
+          </property>
+          <property name="gridVisible">
+           <bool>true</bool>
+          </property>
+          <property name="horizontalHeaderFormat">
+           <enum>QCalendarWidget::ShortDayNames</enum>
+          </property>
+          <property name="verticalHeaderFormat">
+           <enum>QCalendarWidget::NoVerticalHeader</enum>
+          </property>
+          <property name="navigationBarVisible">
+           <bool>true</bool>
+          </property>
+          <property name="dateEditEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="teacher_grade_button">
+          <property name="text">
+           <string>Go to Grade Management</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="teacher_attendance_button">
+          <property name="text">
+           <string>Mark Attendance</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="grademanagement_tab">
+       <attribute name="title">
+        <string>   Grade Management   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="select_course_label">
+          <property name="text">
+           <string>Select Course</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="grade_course_selector"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="select_student_label">
+          <property name="font">
+           <font>
+            <family>Segoe UI,sans-serif</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Select Student</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="grade_student_selector"/>
+        </item>
+        <item>
+         <widget class="QWidget" name="grade_screen" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>1</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QTableWidget" name="student_grade_table">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>2</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <property name="sizeAdjustPolicy">
+              <enum>QAbstractScrollArea::AdjustToContents</enum>
+             </property>
+             <property name="columnCount">
+              <number>4</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Grade Type</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Score</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Weight</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Letter Grade</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSplitter" name="splitter">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QFrame" name="grade_frame">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">#grade_frame {
+    	background-color:  white;
+    	border: 5px solid lightgray;
+    	border-radius: 10px;
+}
+
+#grade_letter_label {
+    	background-color:  white;
+	qproperty-alignment: 'AlignCenter';
+    	font-size: 60pt;
+	font-weight: bold;
+}
+
+#grade_current_label {
+    	background-color:  white;
+	qproperty-alignment: 'AlignCenter';
+   	font-size: 15pt;
+   	font-weight: bold;
+}
+
+#grade_weighted_label {
+    	background-color:  white;
+	qproperty-alignment: 'AlignCenter';
+    	font-size: 25pt;
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QLabel" name="grade_current_label">
+                 <property name="text">
+                  <string>Current Overall Grade</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="grade_letter_label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>2</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI,sans-serif</family>
+                   <pointsize>60</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="grade_weighted_label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI,sans-serif</family>
+                   <pointsize>25</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="grade_box">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI,sans-serif</family>
+            <pointsize>-1</pointsize>
+           </font>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="grade_type_label">
+             <property name="font">
+              <font>
+               <family>Segoe UI,sans-serif</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grade Type</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="grade_add_type_edit"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="score_label">
+             <property name="font">
+              <font>
+               <family>Segoe UI,sans-serif</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Score</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="grade_add_score_edit"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="weight_label">
+             <property name="font">
+              <font>
+               <family>Segoe UI,sans-serif</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Weight</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="grade_add_weight_edit"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="grade_add_button">
+             <property name="text">
+              <string>Add Grade</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="grade_edit_button">
+          <property name="text">
+           <string>Edit Grade(s)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="grade_delete_button">
+          <property name="text">
+           <string>Delete Selected Grade</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="attendance_tab">
+       <attribute name="title">
+        <string>   Attendance   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="attendance_class_label">
+          <property name="text">
+           <string>Select Course</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="attendance_course_selector"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="attendance_date_label">
+          <property name="text">
+           <string>Select Date</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="attendance_date_selector"/>
+        </item>
+        <item>
+         <widget class="QWidget" name="attendance_screen" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QFrame" name="attendance_table_frame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <widget class="QTableWidget" name="attendance_student_table">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>1</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Student ID</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Last Name</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>First Name</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Status</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Notes</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="attendance_button">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#attendance_button:disabled {
+	background-color: &quot;lightgray&quot;
+}</string>
+                </property>
+                <property name="text">
+                 <string>Take Today's Attendance</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QFrame" name="attendance_chart_frame">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>1</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <layout class="QVBoxLayout" name="attendance_chart_layout"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="communication_tab">
+       <attribute name="title">
+        <string>   Communication   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLabel" name="communication_student_label">
+          <property name="text">
+           <string>Select Student</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="communication_student_selector"/>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="communication_guardian_table">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>First Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Last Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Phone Number</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Email</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Relationship to Student</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="communication_message_label">
+          <property name="text">
+           <string>Compose Message</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="communication_message_box"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="communication_message_button">
+          <property name="text">
+           <string>Send Message</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="analytics_tab">
+       <attribute name="title">
+        <string>   Analytics   </string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QFrame" name="analytics_course_frame">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="analytics_course_layout">
+             <item>
+              <widget class="QLabel" name="analytics_course_label">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>Select Course</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="analytics_course_selector">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_8">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QFrame" name="frame_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <item>
+               <widget class="QFrame" name="count_frame">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">#count_frame {
+    	background-color: white;
+    	border: 5px solid lightgray;
+    	border-radius: 10px;
+	qproperty-alignment: 'AlignCenter';
+}
+
+#analytics_count_total_label{
+	background-color: white;
+	qproperty-alignment: 'AlignCenter';
+    	font-size: 30pt;
+	font-weight: bold;
+}
+
+#analytics_student_count_label{
+	background-color: white;
+	qproperty-alignment: 'AlignCenter';
+   	font-size: 15pt;
+   	font-weight: bold;
+}
+
+#grade_weighted_label {
+	background-color: white;
+	qproperty-alignment: 'AlignCenter';
+    	font-size: 25pt;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <widget class="QLabel" name="analytics_student_count_label">
+                   <property name="text">
+                    <string>Number of Students In Class</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="analytics_count_total_label">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableWidget" name="analytics_student_grade_counts_table">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="verticalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAsNeeded</enum>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarAlwaysOff</enum>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QAbstractScrollArea::AdjustToContents</enum>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Letter Grade</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Number of Students</string>
+                 </property>
+                </column>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="analytics_chart_frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <layout class="QVBoxLayout" name="chart_layout">
+                <item>
+                 <widget class="QFrame" name="analytics_chart_layout">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6"/>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>915</width>
+     <height>0</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="teacher.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+school_id,district_id,name,school_type,address,city,state,zip,principal_id
+1,1,Melton Elementary School,elementary,318 Robinson Fort,San Jose,CA,95116,1
+2,1,Singh Elementary School,elementary,95096 Jacob Gateway Suite 405,San Jose,CA,95130,2
+3,1,Coffey Elementary School,elementary,983 Tammy Fords,San Jose,CA,95124,3
+4,1,Griffin Elementary School,elementary,35805 Cheyenne Village Suite 981,San Jose,CA,95040,4
+5,1,Campbell Middle School,middle,9515 Jenkins Harbor,San Jose,CA,95042,5
+6,1,Powell Middle School,middle,73006 Peter Mountain,San Jose,CA,95168,6
+7,1,Johnson Middle School,middle,42804 Cassandra River Suite 476,San Jose,CA,95118,7
+8,1,Lewis High School,high,9938 Sarah Tunnel Suite 013,San Jose,CA,95049,8
+9,1,Larsen High School,high,6049 Brenda Courts,San Jose,CA,95143,9
+10,1,Mclaughlin Special Education School,special_ed,57973 Andrew Center Apt. 713,San Jose,CA,95156,10

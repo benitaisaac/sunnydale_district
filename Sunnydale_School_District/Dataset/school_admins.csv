@@ -1,0 +1,21 @@
+user_id,username,password,plain_password,email,role,is_active,last_login,created_at
+8201,adm_krinorr,416a73a2046334e057c6b81870d85915a6d70e4a6908f4f0fb31830a75a65748,Y;8GowrI,adm_krinorr@walker-gentry.com,school_admin,True,2025-03-07 15:58:06.073289,2022-11-13 19:08:21.649370
+8202,adm_danspen,b4c7cbd28bbeb8fd2ed63dad2e3c5cb5b421e190e9646072b64a0099b488bb55,d]F+HrQk8K,adm_danspen@ryan.biz,school_admin,True,2024-10-16 04:40:01.776983,2022-07-30 09:32:01.906717
+8203,adm_timray,96c0550644588a15bf9ea3367bbbd238f4862e633344a86b079b5dcdd7420472,1yJSP7z*5Kq,adm_timray@adams.com,school_admin,True,2025-03-25 18:16:35.638588,2023-06-14 08:48:34.212151
+8204,adm_amayoun,7391920faa26dccd36cb956356f77ac24d3439257ca3472134d8e8c2aa453403,hfS.1*+1Z;,adm_amayoun@smith.info,school_admin,True,2025-01-23 23:44:44.618599,2024-10-02 16:01:43.747677
+8205,adm_sarmart,2c96b5f99e0f422c0617f0708831efa82ef7f3578f9330bea6151b5ac56080e9,F$++5b{*$6,adm_sarmart@woodard.com,school_admin,True,2024-05-23 00:52:46.123627,2025-03-28 02:38:15.850784
+8206,adm_janfern,95c3b107148fec7d41ec5dd3c1e35c6555b153f4c88d241ac29d43b1decdccea,^?A8ip{X{Q,adm_janfern@lara.com,school_admin,True,2025-04-18 20:24:32.331805,2023-03-05 21:11:03.569430
+8207,adm_robboyd,c72a8fb4984fb5ecad0d6aefd6c5047c646cf13f42338f66e6590d7102e35180,4Eg]BEZjm,adm_robboyd@bryan.biz,school_admin,True,2024-10-23 01:02:52.671010,2023-06-08 06:18:50.998100
+8208,adm_rebjack,91cc797d39d1d15173cdc044b7b8f1f1c465da8b83c0e9e6e23eb64d58362ce4,2#D)O]d[kT),adm_rebjack@brown-thomas.org,school_admin,True,2024-06-29 20:04:27.307896,2025-01-05 15:04:41.464175
+8209,adm_kenhill,2a755e1434102a29ce88a7aa78d69664e8c1bea53ebeeb98e37283362319c7ec,z1b468C/?K(,adm_kenhill@graham.com,school_admin,True,2024-09-02 14:52:52.890084,2024-03-27 14:58:30.325840
+8210,adm_shafran,07b21822d10e233e43935bd9366f8c2881fcf74f1eba1281c24fbba5fc8c89ed,H&T69:;),adm_shafran@randolph-russell.net,school_admin,True,2024-06-17 23:12:26.362414,2022-10-29 22:54:40.073119
+8211,adm_kenpott,65ce81bc8b891b88d8bc4c7ea8b672304364a59c75e8119debca5f443e07063c,DlXq>Jd4E.,adm_kenpott@johnson.biz,school_admin,True,2025-03-06 21:10:32.565750,2024-05-25 18:47:05.205547
+8212,adm_racrams,c60fadcfb10e611b908c5735c0f312f876ee9604453b86bc87de3ba40f44be11,6C(1#AHT/J^,adm_racrams@mayer-williams.com,school_admin,True,2024-05-11 14:56:52.365536,2024-09-25 07:10:22.966623
+8213,adm_brahoff,8c69a4b32d0152671bdb7b19801061308ccf49c614fcac2a9b127fe14adeb5d9,uVt!7daC,adm_brahoff@gonzalez-blackwell.com,school_admin,True,2024-11-14 00:59:10.577384,2022-10-24 16:02:05.651960
+8214,adm_natcolo,79b8a484dbea352d9d8e1cfbaea3983d9f1051d3c591735e104c7ac9799ee8ae,7_;M=K?t,adm_natcolo@cole.com,school_admin,True,2024-12-11 12:04:00.730540,2022-12-25 20:06:54.825493
+8215,adm_pammcki,35f63bef9957fbd83436facaacf7aaba96b1ddef9de95c8466e7584983382eda,P*#5qr3OH,adm_pammcki@harvey-li.com,school_admin,True,2024-07-04 05:53:48.192573,2024-01-06 17:18:03.888405
+8216,adm_micdoug,1077acdb336e3b6abec456ad90c2ffb0a5cc070925b3129a8306edafc357e7a8,3g*L_uRoO&{(,adm_micdoug@spencer-archer.com,school_admin,True,2025-01-10 13:23:54.801134,2023-12-22 14:18:36.155863
+8217,adm_judwill,833ed42012957e2fe9eb06544207c0cb86064255f74402c7f39ae1af3539b2b2,1f$u5U`1),adm_judwill@davis.com,school_admin,True,2024-05-17 13:38:28.370194,2022-12-11 06:38:33.968436
+8218,adm_doualex,de485f6b5c1097d1e60935048f64f33acad98a4d36d5f03acd92895fab564f7b,]dZ{Ee7!,adm_doualex@bentley.net,school_admin,True,2024-10-08 15:37:45.107831,2024-10-08 02:31:45.126107
+8219,adm_brasimo,3a01756881cd3ccbe00b1d302aaaf94c19b519c1589691ad4bbff926b71c262a,5dpq<!a##i,adm_brasimo@stephens.com,school_admin,True,2025-02-09 02:43:56.810187,2022-11-29 21:55:16.642186
+8220,adm_chesing,ae91d876e87dbc0f8e489141bff978d11aeda2ac64e732b8ecfd9f3f8ca1bf9f,Hj[qg*OoLf4,adm_chesing@cook.com,school_admin,True,2024-06-21 23:31:26.447133,2024-01-06 20:23:01.118253

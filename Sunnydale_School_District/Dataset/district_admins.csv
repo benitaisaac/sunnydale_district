@@ -1,0 +1,2 @@
+user_id,username,password,plain_password,email,role,is_active,last_login,created_at
+8221,dis_mwilkins,b9728f6bdfc20de819f6cb19ed4544bafa8605440bf8b5d5409c47731a556661,V;ew$ES6,dis_mwilkins@lamb.com,district_admin,True,2025-02-03 15:06:27.493925,2024-12-11 10:58:48.491115

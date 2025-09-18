@@ -1,0 +1,22 @@
+administrator_id,user_id,school_id,first_name,middle_name,last_name,phone_number,employment_type,salary,join_date,supervisor_id
+1,8221,,Mary,,Wilkins,(947) 981-5823,full-time,108655.52,2019-07-07,
+2,8201,1.0,Kristy,,Norris,(682) 410-2152,full-time,100635.43,2021-11-16,1.0
+3,8202,1.0,Daniel,Amanda,Spencer,(631) 296-2567,full-time,94202.97,2021-01-02,1.0
+4,8203,2.0,Timothy,,Ray,(440) 969-6588,full-time,94511.34,2019-02-10,1.0
+5,8204,2.0,Amanda,,Young,(267) 342-4063,full-time,111856.41,2015-10-19,1.0
+6,8205,3.0,Sarah,Jenna,Martin,(492) 720-7752,full-time,90621.43,2018-07-26,1.0
+7,8206,3.0,Janet,,Fernandez,(491) 340-5576,full-time,107077.41,2020-11-20,1.0
+8,8207,4.0,Robert,,Boyd,(344) 366-5224,full-time,100538.1,2023-05-26,1.0
+9,8208,4.0,Rebecca,,Jackson,(698) 962-8657,full-time,108627.56,2016-06-27,1.0
+10,8209,5.0,Kenneth,,Hill,(653) 498-9993,full-time,97961.38,2017-03-10,1.0
+11,8210,5.0,Sharon,,Frank,(368) 702-6044,full-time,95645.76,2022-12-15,1.0
+12,8211,6.0,Kenneth,,Potter,(400) 761-3982,full-time,96746.23,2022-06-26,1.0
+13,8212,6.0,Rachel,Elizabeth,Ramsey,(483) 804-9757,full-time,105331.09,2023-02-11,1.0
+14,8213,7.0,Brandi,Samuel,Hoffman,(916) 591-2685,full-time,104691.83,2017-07-21,1.0
+15,8214,7.0,Natalie,,Colon,(876) 861-5680,full-time,116483.6,2015-12-22,1.0
+16,8215,8.0,Pamela,Mark,Mckinney,(832) 967-3393,full-time,109568.55,2016-03-12,1.0
+17,8216,8.0,Michael,April,Dougherty,(919) 932-3161,full-time,103079.57,2021-12-02,1.0
+18,8217,9.0,Judy,Megan,Williams,(741) 953-5256,full-time,116012.53,2018-04-07,1.0
+19,8218,9.0,Douglas,,Alexander,(568) 847-8794,full-time,94878.22,2019-11-14,1.0
+20,8219,10.0,Brandy,,Simon,(804) 674-8858,full-time,93555.86,2016-10-07,1.0
+21,8220,10.0,Chelsea,Phyllis,Singleton,(563) 473-1395,full-time,90166.23,2023-07-30,1.0

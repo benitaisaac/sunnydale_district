@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login_dialog</class>
+ <widget class="QDialog" name="login_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>660</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>660</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sunnydale School District - Login</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    background: none;
+    height: 0px;
+}
+
+/* === GENERAL APP STYLE === */
+QMainWindow {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+ QWidget {
+    background-color: rgb(255, 252, 228);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+/* === PUSH BUTTONS === */
+QPushButton {
+    background-color: rgb(5, 60, 171);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: rgb(187, 228, 255);
+}
+
+QPushButton:pressed {
+    background-color: #2e5aa0;
+}
+
+/* === COMBOBOX, INPUTS, TEXTAREA === */
+QComboBox, QLineEdit, QTextEdit, QDateEdit, QTimeEdit {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+QComboBox::drop-down {
+    border: none;
+    background-color: #ffffff;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    selection-background-color: #e6f0ff;
+    selection-color: #000;
+}
+
+
+/* === TABLES === */
+QTableWidget, QTableView {
+    background-color: #ffffff;
+    alternate-background-color: #f0f0f0;
+    gridline-color: #dcdcdc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+QHeaderView::section {
+    background-color: #e6e9ed;
+    padding: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+/* === LIST WIDGETS === */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* === CALENDAR === */
+QCalendarWidget QToolButton {
+    color: #4a90e2;
+}
+
+QCalendarWidget QAbstractItemView {
+    selection-background-color: rgb(5, 60, 171);
+    selection-color: white;
+}
+
+/* === GROUP BOXES === */
+QGroupBox {
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 4px;
+    background-color: transparent;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+/* === TABS === */
+QTabWidget::pane {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+	background-color: rgb(187, 228, 255);
+}
+
+QTabBar::tab {
+    background: #e6e9ed;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 6px 12px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    color: rgb(5, 60, 171);
+    padding: 6px 12px;
+   	font-weight: bold;
+}
+
+/* === TOOLTIP === */
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+QCheckBox {
+    background-color: white;
+}
+
+QMessageBox {
+    background-color: white;
+    font-size: 15px;
+}
+
+QMessageBox QLabel {
+    background-color: transparent;
+}
+
+
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="sunnydale_logo_png">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 72pt &quot;MS Shell Dlg 2&quot;;</string>
+          </property>
+          <property name="text">
+           <string>Login</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="username_label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI,sans-serif</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:12pt;
+ color:rgb(0, 71, 171);</string>
+     </property>
+     <property name="text">
+      <string>Username</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="username_edit">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:13pt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="password_label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI,sans-serif</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:12pt; 
+color:rgb(0, 71, 171);</string>
+     </property>
+     <property name="text">
+      <string>Password</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="password_edit">
+     <property name="styleSheet">
+      <string notr="true">font-size:13pt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="login_button">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+background-color: rgb(5, 60, 171);
+font-size:14pt;
+color: rgb(255, 255, 255);
+}
+
+QPushButton:hover {
+    background-color: rgb(187, 228, 255);
+}</string>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="login_message">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:13pt; 
+color:rgb(0, 71, 171);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
